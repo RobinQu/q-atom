@@ -1,0 +1,35 @@
+{
+  "author": "Robin Qu <long.qul@aliyun-inc.com> (http://robinqu.me/)",
+  "name": "q-atom",
+  "description": "Object system for common usage; Base object class, Q.Object with power of extension, mixin, creation",
+  "version": "0.0.1",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.10"
+  },
+  "bpm:build": {
+    "bpm_libs.js": {
+      "files": [
+        "lib"
+      ]
+    },
+    "q-atom.js": {
+      "files": [
+        "lib"
+      ]
+    },
+    "q-atom/bpm_tests.js": {
+      "files": [
+        "spec"
+      ],
+      "modes": [
+        "debug"
+      ]
+    }
+  },
+  "dependencies:development": {
+    "jasmine": ">= 0"
+  }
+}

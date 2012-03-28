@@ -1,0 +1,76 @@
+body{ height:100%;}
+
+#benchmark-timeline {
+ position: absolute;
+ top: 0; 
+ left: 0;
+ width: 100%;
+ font: 12px Arial;
+ z-index: 1000;
+ background: #1a82bf;
+}
+
+#benchmark-timeline h1 {
+  font-size: 2.5em;
+  padding: 15px;
+  color: white;
+  background: #211d36;
+}
+
+#benchmark-timeline h1 a.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+}
+
+#benchmark-timeline dl {
+  line-height: 1.5em;
+}
+
+#benchmark-timeline dt {
+  border-bottom: 1px solid #211d36;
+  color: #fcb448;
+}
+
+#benchmark-timeline dt p {
+  padding: 10px;
+}
+
+#benchmark-timeline dt .percentage-bar {
+  background: #ca2939;
+  display: block;
+  height: 100%;
+}
+
+#benchmark-timeline dt strong {
+  margin-right: 10px;
+}
+
+#benchmark-timeline dt span {
+  font-weight: bolder;
+  color: white;
+}
+
+#benchmark-timeline dd {
+  background: #d4d4d4;
+  color: #211d36;
+  display: none;
+}
+
+#benchmark-timeline dd ul {
+  list-style: none; 
+}
+
+#benchmark-timeline dd ul li {
+  text-indent: 10px;
+  border-bottom: 1px solid #211d36;
+  padding: 0 10px;
+  line-height: 2em;
+}
+
+#benchmark-timeline dd ul li span {
+  padding-right: 5px;
+}
