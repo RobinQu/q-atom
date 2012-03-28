@@ -1,6 +1,6 @@
 #Q-Atom
 
-A extensible object system for both server end and client end. Part of [Project Q](http://q.elfvision.com/). A universal application frameworks for enterprise JavaScript!
+A extensible object system for both server end and client end. Part of [Project Q](http://elfvision.com/projects/Q). A universal application frameworks for enterprise JavaScript!
 
 ##Synopsis
 
@@ -12,7 +12,7 @@ We have a powerful base object, you can mix-in any properties.
 		});
 	
 ###Extending
-	All class derive from *Q.Object*
+All class derive from *Q.Object*
 	
 		var Bar = Q.Object.extend({
 			"props": "value"
@@ -24,19 +24,19 @@ We have a powerful base object, you can mix-in any properties.
 		});
 
 ###Creating
-	Using *#create* method or *new* keyword
+Using *#create* method or *new* keyword
 
 		var bar = Bar.create();
 		var foo = new Foo();
 
-	You can pass a hash to override its default properties.
+You can pass a hash to override its default properties.
 
 		var foo1 = new Foo({
 			"props": "value2"
 		});
 
 ###Overridden Methods
-	You can access the overridden method by *arguments.callee.base*
+You can access the overridden method by *arguments.callee.base*
 	
 		var SuperFoo = Foo.extend({
 			foo: function() {}
