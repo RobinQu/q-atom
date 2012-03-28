@@ -1,11 +1,11 @@
 #Q-Atom
 
-Part of [Project Q](http://q.elfvision.com/). A universal application frameworks for enterprise JavaScript!
+A extensible object system for both server end and client end. Part of [Project Q](http://q.elfvision.com/). A universal application frameworks for enterprise JavaScript!
 
 ##Synopsis
 
 ###Base Object
-	We have a powerful base object, you can mix-in any properties.
+We have a powerful base object, you can mix-in any properties.
 
 		var foo = Q.Object.create({
 			"bar": "foo.bar"
