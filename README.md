@@ -22,6 +22,10 @@ All class derive from *Q.Object*
 			"props": "value1",
 			"nice": "day"
 		});
+		
+		var Cow = Foo.extend(Speakable, Lovable, {
+		  "name": "A Cow"
+		});
 
 ###Creating
 Using *#create* method or *new* keyword
@@ -60,5 +64,3 @@ Object designator using newly introduced API in Javascript 1.8.5:
 	Object.defineProperties
 	//https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/create
 	Object.create
-	
-
