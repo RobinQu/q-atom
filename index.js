@@ -1,5 +1,5 @@
 /**
-  This file is only nodejs
+  This file is only for nodejs
  */
 
 module.exports = require("./lib/object");

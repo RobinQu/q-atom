@@ -59,5 +59,28 @@ describe("Q.Object, object extension toolkits", function() {
     animal.lang = "bee-lang";
   });
   
+  it("should modify on instance not on prototype", function() {
+    var Father = Q.Object.extend({
+      memory: null,
+      init: function() {//should create a new array for each instance
+        this.memory = [];
+        return this;
+      }
+    });
+    
+    var f1 = Father.create();
+    f1.memory.push("birth");
+    var f2 = Father.create();
+    
+    expect(f1.memory[0]).toEqual("birth");
+    expect(Father.prototype.memory).toEqual(null);
+    expect(f2.memory.length).toEqual(0);
+    
+    var Son = Father.extend({});
+    expect(Son.prototype.memory).toEqual(null);
+    
+    
+  });
+  
 
 });
