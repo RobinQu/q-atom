@@ -2,7 +2,7 @@
   "author": "Robin Qu <long.qul@aliyun-inc.com> (http://robinqu.me/)",
   "name": "q-atom",
   "description": "Object system for common usage; Base object class, Q.Object with power of extension, mixin, creation",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "repository": {
     "url": ""
   },
